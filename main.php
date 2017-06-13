@@ -18,6 +18,7 @@ else {
     //$image = $user['image'];
     //$p_number = $user['p_number']; //jābut post nevis session
 }
+
 ?>
 <?php 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') 
@@ -30,6 +31,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     }
     elseif (isset($_POST['brauciens'])) { //brauciena pievienošana
         require 'brauciens.php'; 
+    }
+    elseif (isset($_POST['search'])) {
+            $sakums = $_POST['sakums'];
+            $beigas = $_POST['beigas'];
+
+            // Escape all $_POST variables to protect against SQL injections
+            $sakums = $mysqli->escape_string($_POST['sakums']);
+            $beigas = $mysqli->escape_string($_POST['beigas']);
+
+            $_SESSION['sakums'] = $_POST['sakums'];
+            $_SESSION['beigas'] = $_POST['beigas'];
+        //require 'mekletie-sludinajumi.php';
     }
 }
 ?>
@@ -56,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
   <!--Pogas-->
   <div class="pogas-logged">
       <ul class="tab-group">
-          <li class="tab active"><a href="#meklet, #sludinajumi">Sludinājumi</a></li>
+          <li class="tab active"><a href="#meklet, #mekletie-sludinajumi, #sludinajumi">Sludinājumi</a></li>
           <li class="tab"><a href="#brauciens">+ Brauciens</a></li>
           <li class="tab"><a href="#pasazieris">+ Pasazieris</a></li>
       </ul>
@@ -100,7 +113,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
   <!--Meklešanas forma-->
   <div id="meklet">   
     <form action="main.php" method="post" autocomplete="off">
-
     <div class="credentials-wrapper">
         <div class="search-ico">
           <img src="img/search.png" width='50' height='50' alt="Search icon" />
@@ -109,27 +121,40 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
             <label>
               No
             </label>
-            <input type="text" autocomplete="off" class="city" name="city"/>
+            <input type="text" autocomplete="off" class="city" name="sakums"/>
           </div>
                 
           <div class="field-wrap">
             <label>
               Uz
             </label>
-            <input type="text" autocomplete="off" class="city" name="city"/>
+            <input type="text" autocomplete="off" class="city" name="beigas"/>
           </div>
                 
-          <button class="button button-block" name="search" />Meklēt</button>
+          <button type="submit" class="button button-block" name="search" />Meklēt</button>
       </div>
     </form>
   </div>
+
+    <!--Mekletie sludinajumi-->
+  <div id="mekletie-sludinajumi" class="content">
+    <h1>Meklētie Sludinajumi!</h1>
+          <form action="main.php" method="post" autocomplete="off">
+              <div id="mekletie-sludinajumi-cover" class="mekletie-sludinajumi-cover">
+              <?php
+                 if (isset($_POST['search'])) {
+                   include 'mekletie-sludinajumi.php';
+                 }
+              ?>
+              </div>
+          </form>
+        </div>
 
   <!--Visi sludinajumi-->
   <div id="sludinajumi" class="content">
     <h1>Braucam Kopā!</h1>
           <form action="main.php" method="post" autocomplete="off">
               <div id="sludinajumi-cover" class="sludinajumi-cover">
-   
               </div>
           </form>
         </div>
@@ -254,9 +279,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 </div> 
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-    <script src="js/index.js"></script>
     <script src="//netsh.pp.ua/upwork-demo/1/js/typeahead.js"></script>
+    <script src="js/index.js"></script>
+
 
 
 </body>

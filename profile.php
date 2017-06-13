@@ -228,17 +228,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     <div id="mani-sludinajumi" class="content">
         <h1>Jūsu Sludinājumi!</h1>
         <form action="profile.php" method="post" autocomplete="off">
-          <div id="mani-sludinajumi-cover" class="mani-sludinajumi-cover">
-            
-          </div>
+          <div id="mani-sludinajumi-cover" class="mani-sludinajumi-cover"></div>
         </form>
-
     </div>
+    
   </div>
 </div>
     
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="js/index.js"></script>
+<script src="//netsh.pp.ua/upwork-demo/1/js/typeahead.js"></script>
 
 </body>
 </html>

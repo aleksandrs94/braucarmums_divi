@@ -456,17 +456,17 @@ a:hover {
 #mani-sludinajumi {
   margin: 100px auto; }
 
-#sludinajumi .sludinajuma-info, #mani-sludinajumi .sludinajuma-info {
+#sludinajumi .sludinajuma-info, #mani-sludinajumi .sludinajuma-info, .tab-content .sludinajuma-info {
   width: 100%;
   height: 180px;
   padding: 15px 0 10px 0;
   margin-bottom: 30px;
   margin-top: 20px;
   box-shadow: 0 -6px 5px 11px rgba(19, 35, 47, 0.7); }
-  #sludinajumi .sludinajuma-info .profile-info, #mani-sludinajumi .sludinajuma-info .profile-info {
+  #sludinajumi .sludinajuma-info .profile-info, #mani-sludinajumi .sludinajuma-info .profile-info, .tab-content .sludinajuma-info .profile-info {
     width: 20%;
     float: left; }
-    #sludinajumi .sludinajuma-info .profile-info img, #mani-sludinajumi .sludinajuma-info .profile-info img {
+    #sludinajumi .sludinajuma-info .profile-info img, #mani-sludinajumi .sludinajuma-info .profile-info img, .tab-content .sludinajuma-info .profile-info img {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
@@ -481,37 +481,37 @@ a:hover {
       bottom: 0;
       left: 0;
       right: 0; }
-    #sludinajumi .sludinajuma-info .profile-info .name, #sludinajumi .sludinajuma-info .profile-info .number, #mani-sludinajumi .sludinajuma-info .profile-info .name, #mani-sludinajumi .sludinajuma-info .profile-info .number {
+    #sludinajumi .sludinajuma-info .profile-info .name, #sludinajumi .sludinajuma-info .profile-info .number, #mani-sludinajumi .sludinajuma-info .profile-info .name, #mani-sludinajumi .sludinajuma-info .profile-info .number, .tab-content .sludinajuma-info .profile-info .name, .tab-content .sludinajuma-info .profile-info .number {
       text-align: center; }
-      #sludinajumi .sludinajuma-info .profile-info .name p, #sludinajumi .sludinajuma-info .profile-info .number p, #mani-sludinajumi .sludinajuma-info .profile-info .name p, #mani-sludinajumi .sludinajuma-info .profile-info .number p {
+      #sludinajumi .sludinajuma-info .profile-info .name p, #sludinajumi .sludinajuma-info .profile-info .number p, #mani-sludinajumi .sludinajuma-info .profile-info .name p, #mani-sludinajumi .sludinajuma-info .profile-info .number p, .tab-content .sludinajuma-info .profile-info .name p, .tab-content .sludinajuma-info .profile-info .number p {
         margin: 0px; }
-  #sludinajumi .sludinajuma-info .brauciena-info, #mani-sludinajumi .sludinajuma-info .brauciena-info {
+  #sludinajumi .sludinajuma-info .brauciena-info, #mani-sludinajumi .sludinajuma-info .brauciena-info, .tab-content .sludinajuma-info .brauciena-info {
     width: 80%;
     height: 130px;
     padding-top: 10px;
     float: right;
     position: relative;
     display: block; }
-    #sludinajumi .sludinajuma-info .brauciena-info .marsruts-info, #mani-sludinajumi .sludinajuma-info .brauciena-info .marsruts-info {
+    #sludinajumi .sludinajuma-info .brauciena-info .marsruts-info, #mani-sludinajumi .sludinajuma-info .brauciena-info .marsruts-info, .tab-content .sludinajuma-info .brauciena-info .marsruts-info {
       text-transform: uppercase;
       text-align: left;
       font-size: 15pt;
       width: 50%;
       height: 30px;
       float: left; }
-    #sludinajumi .sludinajuma-info .brauciena-info .datums-info, #mani-sludinajumi .sludinajuma-info .brauciena-info .datums-info {
+    #sludinajumi .sludinajuma-info .brauciena-info .datums-info, #mani-sludinajumi .sludinajuma-info .brauciena-info .datums-info, .tab-content .sludinajuma-info .brauciena-info .datums-info {
       width: 50%;
       height: 30px;
       top: 0;
       float: left;
       text-align: right; }
-    #sludinajumi .sludinajuma-info .brauciena-info .cena-info, #mani-sludinajumi .sludinajuma-info .brauciena-info .cena-info {
+    #sludinajumi .sludinajuma-info .brauciena-info .cena-info, #mani-sludinajumi .sludinajuma-info .brauciena-info .cena-info, .tab-content .sludinajuma-info .brauciena-info .cena-info {
       text-align: left;
       font-size: 14pt;
       width: 50%;
       height: 30px;
       float: left; }
-    #sludinajumi .sludinajuma-info .brauciena-info .skaits-info, #mani-sludinajumi .sludinajuma-info .brauciena-info .skaits-info {
+    #sludinajumi .sludinajuma-info .brauciena-info .skaits-info, #mani-sludinajumi .sludinajuma-info .brauciena-info .skaits-info, .tab-content .sludinajuma-info .brauciena-info .skaits-info {
       width: 30%;
       height: 30px;
       display: block;
@@ -519,7 +519,7 @@ a:hover {
       text-align: right;
       padding-top: 15px;
       font-size: 18pt; }
-    #sludinajumi .sludinajuma-info .brauciena-info .description-info, #mani-sludinajumi .sludinajuma-info .brauciena-info .description-info {
+    #sludinajumi .sludinajuma-info .brauciena-info .description-info, #mani-sludinajumi .sludinajuma-info .brauciena-info .description-info, .tab-content .sludinajuma-info .brauciena-info .description-info {
       display: block;
       width: 85%;
       height: 55px;
@@ -528,11 +528,12 @@ a:hover {
       float: left;
       text-align: left;
       overflow: hidden; }
-      #sludinajumi .sludinajuma-info .brauciena-info .description-info p, #mani-sludinajumi .sludinajuma-info .brauciena-info .description-info p {
+      #sludinajumi .sludinajuma-info .brauciena-info .description-info p, #mani-sludinajumi .sludinajuma-info .brauciena-info .description-info p, .tab-content .sludinajuma-info .brauciena-info .description-info p {
         text-align: left;
         margin: 0;
-        padding-left: 2%; }
-    #sludinajumi .sludinajuma-info .brauciena-info .veids-ico, #mani-sludinajumi .sludinajuma-info .brauciena-info .veids-ico {
+        padding-left: 2%;
+        padding-right: 2%; }
+    #sludinajumi .sludinajuma-info .brauciena-info .veids-ico, #mani-sludinajumi .sludinajuma-info .brauciena-info .veids-ico, .tab-content .sludinajuma-info .brauciena-info .veids-ico {
       width: 15%;
       height: 75px;
       float: right;
@@ -656,6 +657,8 @@ a:hover {
   background: #41aff4;
   color: #ffffff; }
 
+.sludinajumu-form .tab-content > div:nth-child(3) {
+  display: block; }
 .sludinajumu-form .tab-content > div:nth-child(2) {
   display: block; }
 .sludinajumu-form .tab-content > div {

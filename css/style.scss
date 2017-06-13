@@ -640,7 +640,7 @@ label.active .req {
   margin: 100px auto;
 }
 
-#sludinajumi, #mani-sludinajumi {
+#sludinajumi, #mani-sludinajumi, .tab-content {
       .sludinajuma-info {
         width: 100%;
         height: 180px;
@@ -725,6 +725,7 @@ label.active .req {
             text-align: left;
             margin: 0;
             padding-left: 2%;
+            padding-right: 2%;
           }
         }
         .veids-ico {
@@ -874,6 +875,10 @@ label.active .req {
 }
 
 .sludinajumu-form {
+  .tab-content > div:nth-child(3) {
+  display: block;
+  }
+
   .tab-content > div:nth-child(2) {
   display: block;
   }

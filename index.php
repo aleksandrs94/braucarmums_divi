@@ -144,7 +144,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
+  <script src="//netsh.pp.ua/upwork-demo/1/js/typeahead.js"></script>
     <script src="js/index.js"></script>
 
 </body>

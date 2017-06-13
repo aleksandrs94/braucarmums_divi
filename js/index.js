@@ -83,18 +83,32 @@ function validate_cena(evt) {
 //Ielādē konkrēto sludinājumu
 $(document).ready(function(){
   $("#sludinajumi-cover").load("sludinajumi.php");
+  //$("#sludinajumi-cover").load("mekletie-sludinajumi.php");
   $("#mani-sludinajumi-cover").load("mani-sludinajumi.php");
+
+$("search").click(function() {
+
+  $("#mekletie-sludinajumi-cover").load("mekletie-sludinajumi.php");
+  //return false;
+
+  //document.getElementById('mekletie-sludinajumi-cover').style.display = "block";
+  //document.getElementById('sludinajumi-cover').style.display = "none";
+
 });
+});
+
+
 
 $(".sludinajuma-info").click(function() {
   window.location = $(this).find("a").attr("href"); 
-  return false;
+  //return false;
 });
 
-        $(document).ready(function() {
+$(document).ready(function() {
 
-            $('input.city').typeahead({
-                name: 'city',
-                remote: 'city.php?query=%QUERY'
-            });
-        })
+    $('input.city').typeahead({
+        name: 'city',
+        remote: 'city.php?query=%QUERY'
+    });
+});
+
